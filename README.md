@@ -1,5 +1,7 @@
 ## ✨ Official TextMaker ApI
 
+Apa ? Textpro ? Photooxy ? Bukan dong, ini ApI 100% Buatan Sndiri Tanpa Bantuan Siapa pun 👍
+
 - Build With Flask And Pillow ♥️
 - Free ApI 100%
 - Open Source ✔️
