@@ -8,7 +8,7 @@ class tulis:
         self.text = listOrText
         self.output = []
     def tulis(self):
-        img, font, kata, tempkata=Image.open("lib/textmaker/image.png"), ImageFont.truetype("lib/textmaker/fontnya.ttf",250),'',''
+        img, font, kata, tempkata=Image.open("lib/textmaker/image.png"), ImageFont.truetype("lib/textmaker/fontnya.ttf",220),'',''
         draw=ImageDraw.Draw(img)
         if type(self.text) is not list:
             self.output=[]
@@ -22,13 +22,13 @@ class tulis:
             spliter=kata.split("\n")
         else:
             spliter=self.text
-        line=115
-        for i in spliter[:80]:
+        line=415
+        for i in spliter[:40]:
             draw.text((70, int(line)), i, font=font, fill=("pink")) #selisih = Line
             line+=85 + 4.0
         self.output.append(img)
-        if len(spliter) > 80:
-            self.output+=tulis(spliter[80:]).tulis()
+        if len(spliter) > 40:
+            self.output+=tulis(spliter[40:]).tulis()
         return self.output
     def __repr__(self):
         return "<length: %s char>"%len(self.text)
